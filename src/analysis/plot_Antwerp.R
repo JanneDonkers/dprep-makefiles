@@ -13,6 +13,7 @@ df_pivot <- read.csv("temp/pivot_table.csv")
 df_pivot$date <- as.Date(df_pivot$date)
 
 pdf("output/plot_Antwerp.pdf")
+dir.create('output')
 plot(x = df_pivot$date, 
      y = df_pivot$Stadspark, 
      col = "red", 
