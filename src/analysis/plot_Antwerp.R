@@ -7,13 +7,13 @@ library(reshape2)
 library(dplyr)
 
 # import the data from `gen/analysis/pivot_table`
-df_pivot <- read.csv("temp/pivot_table.csv")
+df_pivot <- read.csv("../../temp/pivot_table.csv")
 
 # convert the `date` column into date format.
 df_pivot$date <- as.Date(df_pivot$date)
 
-pdf("output/plot_Antwerp.pdf")
-dir.create('output')
+pdf("../../output/plot_Antwerp.pdf")
+dir.create('../../output')
 plot(x = df_pivot$date, 
      y = df_pivot$Stadspark, 
      col = "red", 
