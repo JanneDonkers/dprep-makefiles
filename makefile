@@ -1,4 +1,5 @@
-#overall makefile
+#Overall makefile 
+## When calling make this makefil starts the makefiles in analysis and data-preparation
 	
 all: data-preparation analysis 
 
